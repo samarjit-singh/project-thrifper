@@ -4,51 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Womens section</title>
+    <link rel="stylesheet" href="WomenCSS.css" />
   </head>
   <body>
+    <menu>
+      <button>HOME</button>
+      <button>
+        <a href="Men.html">HIM</a>
+      </button>
+      <button>
+        <a href="Donate.html">EVERYONE</a>
+      </button>
+      <button>🛒CART</button>
+    </menu>
     <section>
-      <h2>Women's Apparel</h2>
-      <figure class="f1">
-        <img src="img/models1.png" width="100" height="100" />
-        <p>Highwaist-Jeans</p>
-
-        <ul class="section1">
-          <li>
-            <p>Medium(32)</p>
-          </li>
-          <li>
-            <p>20$</p>
-          </li>
-        </ul>
-        <a href="#" class="women-button">Add to cart</a>
-      </figure>
-      <figure class="f2">
-        <img src="img/models1.png" width="100" height="100" />
-        <p>Wool-high neck Sweatshirt</p>
-        <ul class="section1">
-          <li>
-            <p>Large</p>
-          </li>
-          <li>
-            <p>10$</p>
-          </li>
-        </ul>
-        <a href="#" class="women-button">Add to cart</a>
-      </figure>
-      <figure class="f1">
-        <img src="img/models1.png" width="100" height="100" />
-        <p>Crop-top</p>
-        <ul class="section1">
-          <li>
-            <p>Small</p>
-          </li>
-          <li>
-            <p>15$</p>
-          </li>
-        </ul>
-        <a href="#" class="women-button">Add to cart</a>
-      </figure>
+      <div class="forHer">
+        <h2>FOR HER</h2>
+      </div>
     </section>
+    <main>
+      <div class="grid-3-cols">
+        <figure class="product">
+          <img class="red_dress" src="img/red_dress.jpg" />
+          <div class="product-box">
+            <h3>H&M Red Sundress</h3>
+            <ul claas="product-details">
+              <li>
+                <p>SIZE - L</p>
+              </li>
+              <li>
+                <p>PRODUCT ID - 0014</p>
+              </li>
+            </ul>
+            <div class="product-price">
+              <strong>20$</strong>
+              <a href="#" class="btn btn--small">Add to cart</a>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="product">
+          <img class="high_waist_jeans" src="img/high_waist_jeans.jpg" />
+          <div class="product-box">
+            <h3>LEVI'S HIGH WAIST JEANS</h3>
+            <ul claas="product-details">
+              <li>
+                <span>SIZE - 34</span>
+              </li>
+              <li>
+                <span>PRODUCT ID - 0078</span>
+              </li>
+            </ul>
+            <div class="product-price">
+              <strong>10$</strong>
+              <a href="#" class="btn btn--small">Add to cart</a>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="product">
+          <img class="block_heels" src="img/block_heels.jpg" />
+          <div class="product-box">
+            <h3>MADAME BLOCK HEELS</h3>
+            <ul claas="product-details">
+              <li>
+                <span>SIZE - UK 08</span>
+              </li>
+              <li>
+                <span>PRODUCT ID - 0011</span>
+              </li>
+            </ul>
+            <div class="product-price">
+              <strong>10$</strong>
+              <a href="#" class="btn btn--small">Add to cart</a>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="product">
+          <img class="crop_top" src="img/crop_top.jpg" />
+          <div class="product-box">
+            <h3>H&M Cropped top</h3>
+            <ul claas="product-details">
+              <li>
+                <span>SIZE - M</span>
+              </li>
+              <li>
+                <span>PRODUCT ID - 0089</span>
+              </li>
+            </ul>
+            <div class="product-price">
+              <strong>20$</strong>
+              <a href="#" class="btn btn--small">Add to cart</a>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </main>
   </body>
 </html>
