@@ -4,59 +4,182 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link href="style.css" rel="stylesheet" />
-
-    <title class="head-title">thrifper</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Thrifper</title>
   </head>
-
   <body>
-    <div class="container">
-      <header class="main-header">
+    <header class="header">
+      <div class="logo">
         <h1>THRIFPER</h1>
-        <img src="img/models1.png" class="models-img" />
-      </header>
-
-      <section class="who-we-are-section">
-        <div class="grid-3-cols">
-          <img src="img/models2.png" alt="people sitting on chair" />
-          <div class="who-we-are-box">
-            <h2>who we are</h2>
-            <blockquote class="who-we-are-text">
-              thrifper offers a well-curated range of fashion items for men and
-              women. at our en, our beliefs directs us to do good deeds even if
-              for a small person. we aim to provide an enjoyable shopping
-              experience for all our customers.
-            </blockquote>
+      </div>
+      <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a class="nav-links" href="#">About Us</a></li>
+        <li><a class="nav-links" href="#">Categories</a></li>
+        <li><a class="nav-links listing-part" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <!-- <button class="btn-mobile-nav"><ion-icon class="icon-mobile-nav" name="menu"></ion-icon> -->
+      <!-- <ion-icon class="icon-mobile-nav" name="close"></ion-icon> 
+    < </button> -->
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h2 class="heading">Frugality at it's Finest</h2>
+            <p class="description">
+              Give your closet a second-chance.Thrifper offers a well curated
+              line of pre-loved items to buy , sell and enjoy!
+            </p>
+            <a href="#" class="btn btn--full margin-right-sm"
+              >Start Thrifting!</a
+            >
+            <a href="#" class="btn btn--outline">Learn More &darr;</a>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="img/Screenshot (843).png"
+              class="hero-img"
+              alt="Model Pictures"
+            />
           </div>
         </div>
       </section>
-
-      <section class="what-we-offer">
-        <h3>What We Offer</h3>
-        <ul class="what-we-offer-list">
-          <li>apparel for him and her</li>
-          <li>Accessories</li>
-          <li>the power of giving</li>
-        </ul>
+      <section class="section-about">
+        <div class="container">
+          <span class="subheading">Who We Are?</span>
+        </div>
+        <div class="container grid grid--2-cols">
+          <div class="Clothes">
+            <h3 class="heading-secondary">Apparels for Him and Her</h3>
+            <p class="him-description">
+              Thrifper offers a well-curated range of ore-loved items for Men
+              and Women. We aim to provide an enjoyable experience for all our
+              customers
+            </p>
+          </div>
+          <div class="image-apparel">
+            <img src="img/5.png" class="both-image" alt="Picture of outfits" />
+          </div>
+          <div class="image-apparel">
+            <img
+              src="img/donate.jpg"
+              class="donation"
+              alt="Picture of sunset"
+            />
+          </div>
+          <div class="Clothes">
+            <h3 class="heading-tertiary">A Good Deed</h3>
+            <p class="donate-description">
+              Thrifper believes that a basic-neccessity should be available to
+              each and everyone. And that's why we've introduced a
+              donation-section as well to provide for the needy.
+            </p>
+          </div>
+        </div>
       </section>
-
-      <section class="contact-info">
-        <ul>
+      <section class="categories">
+        <div class="container">
+          <span class="subheading">Categories</span>
+          <h3 class="heading-secondary">Something for Everyone!</h3>
+        </div>
+        <div class="container grid grid--3-cols">
+          <div class="cols">
+            <img
+              src="img/Screenshot (843)2.png"
+              class="Male-model"
+              alt="Picture of Male model"
+            />
+            <a class="tag" href="Men.html">Apparel For Him</a>
+            <ul class="clothing-list">
+              <li class="details">Discription</li>
+              <li class="details">Available Size</li>
+              <li class="details">Cost</li>
+            </ul>
+          </div>
+          <div class="cols">
+            <img
+              src="img/Screenshot (843)1.png"
+              class="Female-model"
+              alt="Picture of Female model"
+            />
+            <a class="tag" href="Women.html">Apparel For Her</a>
+            <ul class="clothing-list">
+              <li class="details">Discription</li>
+              <li class="details">Available Size</li>
+              <li class="details">Cost</li>
+            </ul>
+          </div>
+          <div class="cols">
+            <img
+              src="img/together.jpg"
+              class="hands"
+              alt="Picture of Joined hands"
+            />
+            <a class="tag" href="Donate.html">Apparel For Everyone</a>
+            <ul class="clothing-list">
+              <li class="details">Discription</li>
+              <li class="details">Available Size</li>
+              <!-- <li class="details">Cost</li>  -->
+            </ul>
+          </div>
+         
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="grid grid--3-cols">
+        <ul class="social-links">
           <li>
-            <h4>Mailing address</h4>
-            <p>123 anywhere st.dehradun</p>
+            <a class="footer-link" href="#"
+              ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+            ></a>
           </li>
           <li>
-            <h4>Email Address</h4>
-            <p>hello@gmail.com</p>
+            <a class="footer-link" href="#"
+              ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+            ></a>
           </li>
           <li>
-            <h4>Phone Number</h4>
-            <p>91+ 1234567891</p>
+            <a class="footer-link" href="#"
+              ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+            ></a>
           </li>
         </ul>
-      </section>
+        <p class="copyright">Copyright &copy; 2027 by Thrifper, Inc.All rights reserved.</p>
+      <div class="address">
+        <p class="footer-heading">Contact us</p>
+        <address class="contacts">
+          <p>123 Anywhere, St.Anycity, ST 12345</p>
+          <a href="tel:(123)456-7890">123-456-7890</a><br />
+          <a href="mailto:hello@thrifper.com">hello@thrifper.com</a>
+        </address>
+      </div>
+      <nav class="nav-col">
+        <p class="footer-heading">Account</p>
+        <ul class="footer-nav">
+          <li>
+            <a class="footer-link" href="#">Create Account</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav-col">
+        <p class="footer-heading">Others</p>
+        <ul class="footer-nav">
+          <li>
+            <a class="footer-link" href="#">Help Center</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Privacy & Terms</a>
+          </li>
+        </ul>
+      </nav>
     </div>
+    </footer>
   </body>
 </html>
