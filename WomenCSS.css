@@ -13,7 +13,7 @@ body {
   font-weight: bold;
 
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 450px 1fr;
   grid-template-rows: 80px 1fr;
 }
 
@@ -23,8 +23,8 @@ main {
 }
 
 menu {
-  background-color: rgba(128, 128, 128, 0.212);
-  grid-column: 2/-1;
+  background-color: #fff;
+  grid-column: 1;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -42,21 +42,15 @@ button {
   padding: 8px 12px;
 }
 
-button:last-child {
-  background-color: #087f5b;
-  margin-left: auto;
-  border-radius: 100px;
-}
-
 section {
-  background-image: url("img/F3.jpg");
+  background-image: url("img/red_dress.jpg");
   background-size: cover;
   padding: 40px;
 
   grid-row: 1/-1;
 }
 
-.forHer {
+.forHim {
   /* background-color: #fff; */
   height: 96px;
   flex-shrink: 0;
@@ -96,25 +90,25 @@ figure {
   /* align-items: center; */
 }
 /* images */
-.red_dress {
+.black_tshirt {
   width: 330px;
   height: 350px;
   margin: 0 auto;
 }
 
-.high_waist_jeans {
+.jacket {
   width: 330px;
   height: 350px;
   margin: 0 auto;
 }
 
-.block_heels {
+.shoes_nike {
   width: 330px;
   height: 350px;
   margin: 0 auto;
 }
 
-.crop_top {
+.Sweatshirt {
   width: 330px;
   height: 350px;
   margin: 0 auto;

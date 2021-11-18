@@ -23,8 +23,8 @@ main {
 }
 
 menu {
-  background-color: rgba(128, 128, 128, 0.212);
-  grid-column: 2/-1;
+  background-color: #fff;
+  grid-column: 1;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -40,12 +40,6 @@ button {
   cursor: pointer;
   color: #fff;
   padding: 8px 12px;
-}
-
-button:last-child {
-  background-color: #087f5b;
-  margin-left: auto;
-  border-radius: 100px;
 }
 
 section {
@@ -93,27 +87,28 @@ figure {
   column-gap: 80px;
   row-gap: 80px;
   padding-left: 100px;
+  /* align-items: center; */
 }
 /* images */
-.brown_jacket {
+.black_tshirt {
   width: 330px;
   height: 350px;
   margin: 0 auto;
 }
 
-.jeans {
+.jacket {
   width: 330px;
   height: 350px;
   margin: 0 auto;
 }
 
-.tank-top {
+.shoes_nike {
   width: 330px;
   height: 350px;
   margin: 0 auto;
 }
 
-.white-tshirt {
+.Sweatshirt {
   width: 330px;
   height: 350px;
   margin: 0 auto;

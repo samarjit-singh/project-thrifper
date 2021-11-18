@@ -4,105 +4,203 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Womens section</title>
+    <title>Women section</title>
     <link rel="stylesheet" href="WomenCSS.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body>
-    <menu>
-      <button>
-        <a href="index.html">HOME</a>
-      </button>
-      <button>
-        <a href="Men.html">HIM</a>
-      </button>
-      <button>
-        <a href="Donate.html">EVERYONE</a>
-      </button>
-      <button>🛒CART</button>
-    </menu>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <menu>
+            <button>
+              <a href="index.html">HOME</a>
+            </button>
+            <button><a href="Men.html">HIM</a></button>
+            <button>
+              <a href="Donate.html">EVERYONE</a>
+            </button>
+          </menu>
+
+          <div class="two columns u-pull-right">
+            <ul>
+              <li class="submenu">
+                <p>🛒</p>
+                <div id="shopping-cart">
+                  <table id="cart-content" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+
+                  <a href="Checkout.html" class="button u-full-width"
+                    >check out</a
+                  >
+                  <a href="#" id="clear-cart" class="button u-full-width"
+                    >Clear Cart</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <section>
-      <div class="forHer">
+      <div class="forHim">
         <h2>FOR HER</h2>
       </div>
     </section>
+
     <main>
-      <div class="grid-3-cols">
-        <figure class="product">
-          <img class="red_dress" src="img/red_dress.jpg" />
-          <div class="product-box">
-            <h3>H&M Red Sundress</h3>
-            <ul claas="product-details">
-              <li>
-                <p>SIZE - L</p>
-              </li>
-              <li>
-                <p>PRODUCT ID - 0014</p>
-              </li>
-            </ul>
-            <div class="product-price">
-              <strong>20$</strong>
-              <a href="#" class="btn btn--small">Add to cart</a>
-            </div>
-          </div>
-        </figure>
+      <div id="courses-list" class="container">
+        <div class="row">
+          <div class="four columns">
+            <div class="card">
+              <img src="img/brown.jpg" class="course-image u-full-width" />
+              <div class="info-card">
+                <h4>Padded windbreaker</h4>
+                <p>Size - L</p>
+                <p>ID - WOM001</p>
 
-        <figure class="product">
-          <img class="high_waist_jeans" src="img/high_waist_jeans.jpg" />
-          <div class="product-box">
-            <h3>LEVI'S HIGH WAIST JEANS</h3>
-            <ul claas="product-details">
-              <li>
-                <span>SIZE - 34</span>
-              </li>
-              <li>
-                <span>PRODUCT ID - 0078</span>
-              </li>
-            </ul>
-            <div class="product-price">
-              <strong>10$</strong>
-              <a href="#" class="btn btn--small">Add to cart</a>
+                <p class="price">
+                  Rs 1500 <span class="u-pull-right">RS 800</span>
+                </p>
+                <a
+                  href="#"
+                  class="u-full-width button-primary button input add-to-cart"
+                  data-id="7"
+                  >Add to Cart</a
+                >
+              </div>
             </div>
+            <!--.card-->
           </div>
-        </figure>
+          <div class="four columns">
+            <div class="card">
+              <img src="img/crop_top.jpg" class="course-image u-full-width" />
+              <div class="info-card">
+                <h4>Khadi print top</h4>
+                <p>Size - M</p>
+                <p>ID - WOM002</p>
 
-        <figure class="product">
-          <img class="block_heels" src="img/block_heels.jpg" />
-          <div class="product-box">
-            <h3>MADAME BLOCK HEELS</h3>
-            <ul claas="product-details">
-              <li>
-                <span>SIZE - UK 08</span>
-              </li>
-              <li>
-                <span>PRODUCT ID - 0011</span>
-              </li>
-            </ul>
-            <div class="product-price">
-              <strong>10$</strong>
-              <a href="#" class="btn btn--small">Add to cart</a>
+                <p class="price">
+                  Rs 800 <span class="u-pull-right">RS 500</span>
+                </p>
+                <a
+                  href="#"
+                  class="u-full-width button-primary button input add-to-cart"
+                  data-id="8"
+                  >Add to Cart</a
+                >
+              </div>
             </div>
           </div>
-        </figure>
+          <div class="four columns">
+            <div class="card">
+              <img src="img/dotted_top.png" class="course-image u-full-width" />
+              <div class="info-card">
+                <h4>Dotted off-the-shoulder top</h4>
+                <p>Size - XL</p>
+                <p>ID - WOM003</p>
 
-        <figure class="product">
-          <img class="crop_top" src="img/crop_top.jpg" />
-          <div class="product-box">
-            <h3>H&M Cropped top</h3>
-            <ul claas="product-details">
-              <li>
-                <span>SIZE - M</span>
-              </li>
-              <li>
-                <span>PRODUCT ID - 0089</span>
-              </li>
-            </ul>
-            <div class="product-price">
-              <strong>20$</strong>
-              <a href="#" class="btn btn--small">Add to cart</a>
+                <p class="price">
+                  Rs 900 <span class="u-pull-right">RS 450</span>
+                </p>
+                <a
+                  href="#"
+                  class="u-full-width button-primary button input add-to-cart"
+                  data-id="9"
+                  >Add to Cart</a
+                >
+              </div>
             </div>
+            <!--.card-->
           </div>
-        </figure>
+        </div>
+        <!--.row-->
+        <div class="row">
+          <div class="four columns">
+            <div class="card">
+              <img
+                src="img/orange_hoodie.png"
+                class="course-image u-full-width"
+              />
+              <div class="info-card">
+                <h4>Relaxed Fit orange shirt</h4>
+                <p>Size - S</p>
+                <p>ID - wom004</p>
+
+                <p class="price">
+                  Rs 600 <span class="u-pull-right">RS 200</span>
+                </p>
+                <a
+                  href="#"
+                  class="u-full-width button-primary button input add-to-cart"
+                  data-id="10"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+            <!--.card-->
+          </div>
+          <div class="four columns">
+            <div class="card">
+              <img src="img/pink_top.png" class="course-image u-full-width" />
+              <div class="info-card">
+                <h4>Oversized T-shirt</h4>
+                <p>Size - XL</p>
+                <p>ID - WOM005</p>
+
+                <p class="price">
+                  Rs 900 <span class="u-pull-right">RS 600</span>
+                </p>
+                <a
+                  href="#"
+                  class="u-full-width button-primary button input add-to-cart"
+                  data-id="11"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+            <!--.card-->
+          </div>
+          <div class="four columns">
+            <div class="card">
+              <img
+                src="img/black_jacket.png"
+                class="course-image u-full-width"
+              />
+              <div class="info-card">
+                <h4>Imitation Leather jacket</h4>
+                <p>Size - L</p>
+                <p>ID - WOM006</p>
+
+                <p class="price">
+                  Rs 4000 <span class="u-pull-right">RS 2000</span>
+                </p>
+                <a
+                  href="#"
+                  class="u-full-width button-primary button input add-to-cart"
+                  data-id="12"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+            <!--.card-->
+          </div>
+        </div>
       </div>
     </main>
+    <script src="js/app.js"></script>
   </body>
 </html>
