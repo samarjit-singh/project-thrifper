@@ -3,183 +3,255 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Always include this line of code -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="queries.css" />
+    <meta
+      name="desription"
+      content="Omnifood is an AI-powered food subscription that will make you eat healthy again,365 days per year.It's tailored to your personal taste and nutritional"
+    />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/quaries.css" />
+
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
     <title>Thrifper</title>
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <h1>THRIFPER</h1>
-      </div>
+      <p class="main-heading">THRIFPER</p>
+
       <nav class="main-nav">
-      <ul class="nav-list">
-        <li><a class="nav-links" href="#">About Us</a></li>
-        <li><a class="nav-links" href="#">Categories</a></li>
-        <li><a class="nav-links listing-part" href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-    <!-- <button class="btn-mobile-nav"><ion-icon class="icon-mobile-nav" name="menu"></ion-icon> -->
-      <!-- <ion-icon class="icon-mobile-nav" name="close"></ion-icon> 
-    < </button> -->
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">Who We Are</a></li>
+          <li><a class="main-nav-link" href="#meals">Categories</a></li>
+          </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+      </button>
     </header>
+
     <main>
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
-            <h2 class="heading">Frugality at it's Finest</h2>
-            <p class="description">
+            <h1 class="heading-primary">Frugality at it's Finest</h1>
+
+            <p class="hero-description">
               Give your closet a second-chance.Thrifper offers a well curated
               line of pre-loved items to buy , sell and enjoy!
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
-              >Start Thrifting!</a
-            >
-            <a href="#" class="btn btn--outline">Learn More &darr;</a>
+
+            
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+            <div class="delivered-meals">
+              
+            </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/Screenshot (843).png"
-              class="hero-img"
-              alt="Model Pictures"
-            />
+            <picture>
+              <img
+                src="img/mainImage.png"
+                class="hero-img"
+                alt="women enjoying food,meals in storgae and food in bowl"
+              />
+            </picture>
           </div>
         </div>
       </section>
-      <section class="section-about">
+
+      <section class="section-how" id="how">
         <div class="container">
-          <span class="subheading">Who We Are?</span>
+          <span class="subheading">WHO WE ARE</span>
+          <h2 class="heading-secondary">
+             One stop to thrift your troubles away!
+          </h2>
         </div>
-        <div class="container grid grid--2-cols">
-          <div class="Clothes">
-            <h3 class="heading-secondary">Apparels for Him and Her</h3>
-            <p class="him-description">
+
+        <div class="container grid grid--2--cols .grid--center-v">
+          <!-- STEP 01 -->
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">Apparels for Him and Her</h3>
+            <p class="step-description">
               Thrifper offers a well-curated range of ore-loved items for Men
               and Women. We aim to provide an enjoyable experience for all our
               customers
             </p>
           </div>
-          <div class="image-apparel">
-            <img src="img/5.png" class="both-image" alt="Picture of outfits" />
-          </div>
-          <div class="image-apparel">
+          <div class="step-img-box">
             <img
-              src="img/donate.jpg"
-              class="donation"
-              alt="Picture of sunset"
+              src="img/6.png"
+              class="step-img"
+              alt="iPhone app preferences selection screen"
             />
           </div>
-          <div class="Clothes">
+
+          <!-- STEP 02 -->
+          <div class="step-img-box">
+            <img
+              src="img/donate.jpg"
+              class="step-img"
+              alt="iPhone app MEAL APPROVING PLAN"
+            />
+          </div>
+
+          <div class="step-text-box">
+            <p class="step-number">02</p>
             <h3 class="heading-tertiary">A Good Deed</h3>
-            <p class="donate-description">
+            <p class="step-description">
               Thrifper believes that a basic-neccessity should be available to
               each and everyone. And that's why we've introduced a
               donation-section as well to provide for the needy.
             </p>
           </div>
-        </div>
       </section>
-      <section class="categories">
-        <div class="container">
-          <span class="subheading">Categories</span>
-          <h3 class="heading-secondary">Something for Everyone!</h3>
+
+      <section class="section-meals" id="meals">
+        <div class="container center-text">
+          <span class="subheading">CATEGORIES</span>
+          <h2 class="heading-secondary">
+            A place that has something for everyone
+          </h2>
         </div>
-        <div class="container grid grid--3-cols">
-          <div class="cols">
-            <img
-              src="img/Screenshot (843)2.png"
-              class="Male-model"
-              alt="Picture of Male model"
-            />
-            <a class="tag" href="Men.html">Apparel For Him</a>
-            <ul class="clothing-list">
-              <li class="details">Discription</li>
-              <li class="details">Available Size</li>
-              <li class="details">Cost</li>
-            </ul>
-          </div>
-          <div class="cols">
-            <img
-              src="img/Screenshot (843)1.png"
-              class="Female-model"
-              alt="Picture of Female model"
-            />
-            <a class="tag" href="Women.html">Apparel For Her</a>
-            <ul class="clothing-list">
-              <li class="details">Discription</li>
-              <li class="details">Available Size</li>
-              <li class="details">Cost</li>
-            </ul>
-          </div>
-          <div class="cols">
+
+        <div class="container grid grid--3--cols margin-bottom-md">
+
+
+          <a href="Men.html" class="categoriesLink">
+            <div class="meal">
+              <img
+              src="img/MENS.png"
+              class="meal-img"
+              alt="Japanese Gyozas"
+              />
+              
+              <div class="meal-content">
+                <div class="meal-tags">
+                  <span class="tag tag--vegetarian">Men</span>
+                </div>
+              </div>
+            </div>
+          </a>
+            
+
+
+
+          <a href="Women.html" class="categoriesLink">
+
+            <div class="meal">
+              <img
+              src="img/WOMENS.png"
+              class="meal-img"
+              alt="Avocado Salad"
+              />
+              
+              <div class="meal-content">
+                <div class="meal-tags">
+                  <span class="tag tag--vegan">Women</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="Donate.html" class="categoriesLink">
+          <div class="meal">
             <img
               src="img/together.jpg"
-              class="hands"
-              alt="Picture of Joined hands"
+              class="meal-img"
+              alt="Avocado Salad"
             />
-            <a class="tag" href="Donate.html">Apparel For Everyone</a>
-            <ul class="clothing-list">
-              <li class="details">Discription</li>
-              <li class="details">Available Size</li>
-              <!-- <li class="details">Cost</li>  -->
-            </ul>
+
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--vegetarian">Everyone</span>
+                <!-- <span class="tag tag--vegan">Women</span> -->
+              </div>
+            </div>
           </div>
-         
+        </a>    
       </section>
     </main>
+
     <footer class="footer">
-      <div class="grid grid--3-cols">
-        <ul class="social-links">
-          <li>
-            <a class="footer-link" href="#"
-              ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
-            ></a>
-          </li>
-          <li>
-            <a class="footer-link" href="#"
-              ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
-            ></a>
-          </li>
-          <li>
-            <a class="footer-link" href="#"
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+            <h1>THRIFPER</h1>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="https://www.instagram.com/thrifper/"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="https://www.facebook.com/profile.php?id=100075100422619"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="https://mobile.twitter.com/thrifper"
               ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
-            ></a>
-          </li>
-        </ul>
-        <p class="copyright">Copyright &copy; 2027 by Thrifper, Inc.All rights reserved.</p>
-      <div class="address">
-        <p class="footer-heading">Contact us</p>
-        <address class="contacts">
-          <p>123 Anywhere, St.Anycity, ST 12345</p>
-          <a href="tel:(123)456-7890">123-456-7890</a><br />
-          <a href="mailto:hello@thrifper.com">hello@thrifper.com</a>
-        </address>
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">623 Harrison st. , Dehradun,UK 248001</p>
+            <a class="footer-link" href="tel:451-201-6370">451-201-6370</a
+            ><br />
+            <a class="footer-link" href="mailto:hello@thrifper.com"
+              >hello@thrifper.com</a
+            >
+          </address>
+        </div>
+        <nav class="nav-col">
+          <!-- <p class="footer-heading">Account</p> 
+          <ul class="footer-nav">
+            <!-- <li><a class="footer-link" href="#">Sign in</a></li> 
+            <li><a class="footer-link" href="#">ios app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+            <li><a class="footer-link" cla href="#">Create account</a></li>
+          < </ul> -->
+        </nav>
+        <nav class="nav-col">
+          <!-- <p class="footer-heading">Company</p> 
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Omnifood</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Carrers</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col"> 
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Recipe directory</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+         </nav> -->
       </div>
-      <nav class="nav-col">
-        <p class="footer-heading">Account</p>
-        <ul class="footer-nav">
-          <li>
-            <a class="footer-link" href="#">Create Account</a>
-          </li>
-          <li>
-            <a class="footer-link" href="#">Sign In</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="nav-col">
-        <p class="footer-heading">Others</p>
-        <ul class="footer-nav">
-          <li>
-            <a class="footer-link" href="#">Help Center</a>
-          </li>
-          <li>
-            <a class="footer-link" href="#">Privacy & Terms</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
     </footer>
   </body>
 </html>

@@ -21,6 +21,10 @@
 /* ********************** */
 /* NAVIGATION */
 /* ********************** */
+.main-heading {
+  font-size: 8rem;
+  font-weight: 600;
+}
 
 .main-nav-list {
   list-style: none;
